@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array traversing</title>
+</head>
+<body>
+    <script>
+        let data = [34,4,63,0,34,4,34,10,3,341]
+        // for(let i=0;i<data.length;i++){
+        //     console.log(data[i]);
+        // }
+        function clickTome(){
+            // alert("click")
+            
+            let el = document.getElementById("num").value;
+            if(el<data.length){
+                alert(data[el])
+            }
+            else{
+                alert("please enter valid input")
+            }   
+        }
+
+    </script>
+
+<input type="text" id="num">
+<button onclick="clickTome()">click</button>
+</body>
+</html>
